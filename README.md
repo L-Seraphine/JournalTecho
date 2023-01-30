@@ -7,4 +7,6 @@
 
 UI方面，拥有现代化的UI，且可以拓展插件或者自定义页面皮肤等。
 
+开源方面使用`Apache-2.0`协议。
+
 更多开发细节，可以查看[开发日志](http://blog.helloseraphine.top:8090/archives/sui-ji-kai-fa-ri-zhi)
