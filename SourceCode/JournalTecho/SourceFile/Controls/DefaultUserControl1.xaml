@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="JournalTecho.SourceFile.Controls.DefaultUserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:JournalTecho.SourceFile.Controls"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="400">
+    <!--默认基本自定义控件1-->
+    <!--传入四个参数，第一个是标题，第二个是内容，第三个是变量，第四个是图标-->
+    <Border Background="#ffffff" CornerRadius="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Background="AliceBlue" CornerRadius="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Border BorderThickness="0 0 0 0.8"  BorderBrush="Black" CornerRadius="10 0 0 0">
+                        <TextBlock Text="{Binding Titles, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                   FontSize="{Binding TitleFontSize,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                   VerticalAlignment="Center" Margin="10 0 0 0"/>
+                    </Border>
+                    <Border  Grid.Row="1" CornerRadius="0 0 0 10">
+                        <TextBlock Text="{Binding Texts, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Margin="10 0 0 0" />
+                    </Border>
+                </Grid>
+            </Border>
+            <Border Grid.Column="1">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="图标"/>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>
