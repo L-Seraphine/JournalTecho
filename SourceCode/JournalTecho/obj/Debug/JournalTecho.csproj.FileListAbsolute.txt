@@ -17,4 +17,7 @@ D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\JournalTech
 D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\JournalTecho.csproj.CoreCompileInputs.cache
 D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\JournalTecho.exe
 D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\JournalTecho.pdb
+D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\Settings.g.cs
+D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\Settings.baml
 D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\JournalTecho.csprojAssemblyReference.cache
+D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\App.baml
