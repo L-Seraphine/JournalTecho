@@ -16,7 +16,7 @@ namespace JournalTecho.ViewModel
         {
             //命令打开窗体
             OpenSetting = new Command((arg)=> {
-                Settings settings = Settings.GetInstance();
+                Window settings = Settings.GetInstance();
                 settings.Show();
             });
         }

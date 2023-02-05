@@ -7,7 +7,7 @@
         Background="Transparent" WindowStyle="None" AllowsTransparency="True"
         WindowStartupLocation="CenterScreen" 
         mc:Ignorable="d" Foreground="Transparent"
-        Title="Settings" Height="460" Width="720" MinHeight="460" MinWidth="720">
+        Title="Settings" Height="500" Width="720" MinHeight="460" MinWidth="720">
     <!--设置页面-->
     <Border Background="#f4f7fe" CornerRadius="10" Margin="5" Style="{StaticResource BorderShowdow1}">
         <Grid>
@@ -54,7 +54,8 @@
                             </Grid.ColumnDefinitions>
                             <Button Content="&#xe624;" Grid.Column="1" Style="{StaticResource ButtonStyle1}" FontFamily="../SourceFile/Fonts/#iconfont"/>
                             <Button Content="&#xe692;" Grid.Column="2" Style="{StaticResource ButtonStyle1}" FontFamily="../SourceFile/Fonts/#iconfont"/>
-                            <Button Content="&#xeca0;" Grid.Column="3" Style="{StaticResource ButtonStyle1}" FontFamily="../SourceFile/Fonts/#iconfont"/>
+                            <Button Content="&#xeca0;" Grid.Column="3" Style="{StaticResource ButtonStyle1}" 
+                                    FontFamily="../SourceFile/Fonts/#iconfont" Command="{Binding CloseSettings}"/>
                         </Grid>
                     </Border>
                     <!--导航页面栏-->
@@ -65,4 +66,7 @@
             </Border>
         </Grid>
     </Border>
+    <WindowChrome.WindowChrome>
+        <WindowChrome  CaptionHeight="10"/>
+    </WindowChrome.WindowChrome>
 </Window>

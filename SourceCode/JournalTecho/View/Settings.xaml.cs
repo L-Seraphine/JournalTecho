@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using JournalTecho.ViewModel;
 
 namespace JournalTecho.View
 {
@@ -24,6 +25,7 @@ namespace JournalTecho.View
         private Settings()
         {
             InitializeComponent();
+            this.DataContext = new SettingsViewModel();
         }
         public static Settings GetInstance()
         {
