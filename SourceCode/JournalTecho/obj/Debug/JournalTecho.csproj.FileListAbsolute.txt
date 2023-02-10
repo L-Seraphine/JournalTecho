@@ -24,3 +24,6 @@ D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\MainPa
 D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\MainPage.baml
 D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\CalendarPage.g.cs
 D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\CalendarPage.baml
+D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\JournalTecho.csprojAssemblyReference.cache
+D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\DiaryPage.g.cs
+D:\Work Space\Project\JournalTecho\SourceCode\JournalTecho\obj\Debug\View\DiaryPage.baml

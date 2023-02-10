@@ -56,19 +56,19 @@
                                     <TextBlock Text="日记事"/>
                                 </WrapPanel>
                             </RadioButton>
-                            <RadioButton Grid.Row="2"  Style="{DynamicResource RadioButtonStyle1}">
+                            <RadioButton Grid.Row="2"  Style="{DynamicResource RadioButtonStyle1}" Command="{Binding Diary}">
                                 <WrapPanel Margin="0 0 10 0">
                                     <TextBlock Margin="0 2 5 0" Text="&#xe6b8;" FontFamily="../SourceFile/Fonts/#iconfont"/>
                                     <TextBlock Text="日  记"/>
                                 </WrapPanel>
                             </RadioButton>
-                            <RadioButton Grid.Row="3" Style="{DynamicResource RadioButtonStyle1}">
+                            <RadioButton Grid.Row="3" Style="{DynamicResource RadioButtonStyle1}" Command="{Binding Idea}">
                                 <WrapPanel Margin="0 0 10 0">
                                     <TextBlock Margin="0 2 5 0" Text="&#xe861;" FontFamily="../SourceFile/Fonts/#iconfont"/>
                                     <TextBlock Text="点  子"/>
                                 </WrapPanel>
                             </RadioButton>
-                            <RadioButton Grid.Row="4" Style="{DynamicResource RadioButtonStyle1}">
+                            <RadioButton Grid.Row="4" Style="{DynamicResource RadioButtonStyle1}" Command="{Binding TimeLine}">
                                 <WrapPanel Margin="0 0 10 0">
                                     <TextBlock Margin="0 2 5 0" Text="&#xe67a;" FontFamily="../SourceFile/Fonts/#iconfont"/>
                                     <TextBlock Text="时间轴"/>
