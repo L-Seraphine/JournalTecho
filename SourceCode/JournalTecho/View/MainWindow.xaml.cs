@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
+using JournalTecho.View;
 
 namespace JournalTecho
 {
@@ -10,7 +12,8 @@ namespace JournalTecho
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new ViewModel.MainWindowViewModel();
+            this.DataContext = new ViewModel.MainWindowViewModel(MainWindowNav);
+            FirstRadioButton.IsChecked = true;
         }
     }
 }

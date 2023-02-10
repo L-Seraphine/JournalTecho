@@ -20,7 +20,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <!--侧边栏按钮样式模板-->
+        <!--侧边栏按钮样式-->
         <Style x:Key="LeftButtonStyle1" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="#4679eb"/>
@@ -29,12 +29,14 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Margin="0 5 0 5" x:Name="border" BorderBrush="{TemplateBinding BorderBrush}"  Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
-                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <Border Margin="0 2 0 2" x:Name="border" BorderBrush="{TemplateBinding BorderBrush}"  Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
+                            <Border x:Name="insideBorder" Margin="30 0 30 0" CornerRadius="15">
+                                <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="true">
-                                <Setter Property="Background" TargetName="border" Value="#FFBEE6FD"/>
+                                <Setter Property="Background" TargetName="insideBorder" Value="#FFBEE6FD"/>
                                 <Setter Property="BorderBrush" TargetName="border" Value="#FF3C7FB1"/>
                                 <Setter Property="BorderThickness" TargetName="border" Value="3 0 0 0"/>
                             </Trigger>
@@ -59,6 +61,45 @@
                             <Trigger Property="IsMouseOver" Value="true">
                                 <Setter Property="Background" TargetName="border" Value="#f4f7fe"/>
                                 <Setter Property="Opacity" TargetName="border" Value="0.8"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--新侧边栏按钮样式-->
+        <Style x:Key="RadioButtonStyle1" TargetType="{x:Type RadioButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RadioButton}">
+                        <Border x:Name="radioButtonBorder" Margin="0 5 0 5">
+                            <Border x:Name="insideBorder"  Margin="30 0 30 0" CornerRadius="15">
+                                <Grid x:Name="templateRoot" Background="Transparent" SnapsToDevicePixels="True">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid x:Name="markGrid" Margin="2">
+                                        <Ellipse x:Name="optionMark" MinWidth="6" MinHeight="6" Opacity="0"/>
+                                    </Grid>
+                                    <ContentPresenter x:Name="contentPresenter" Grid.Column="1" Focusable="False" HorizontalAlignment="Center" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Center"/>
+                                </Grid>
+                            </Border>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="insideBorder" Value="#FFBEE6FD"/>
+                                <Setter Property="BorderBrush" TargetName="radioButtonBorder" Value="#FF3C7FB1"/>
+                                <Setter Property="BorderThickness" TargetName="radioButtonBorder" Value="3 0 0 0"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="true">
+                                <Setter Property="Opacity" TargetName="optionMark" Value="1"/>
+                                <Setter Property="Background" TargetName="insideBorder" Value="#FFBEE6FD"/>
+                                <Setter Property="BorderBrush" TargetName="radioButtonBorder" Value="#FF3C7FB1"/>
+                                <Setter Property="BorderThickness" TargetName="radioButtonBorder" Value="3 0 0 0"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="{x:Null}">
+                                <Setter Property="Opacity" TargetName="optionMark" Value="0.56"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
