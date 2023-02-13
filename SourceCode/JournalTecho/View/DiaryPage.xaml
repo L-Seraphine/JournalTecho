@@ -4,10 +4,22 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:JournalTecho.View"
+      xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+      xmlns:cef="clr-namespace:CefSharp;assembly=CefSharp.Core"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="DiaryPage">
-    <Border>
-        <RichTextBox/>
+    <Border Margin="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <!--左侧文本输入-->
+                <ColumnDefinition Width="1*"/>
+                <!--右侧文本渲染-->
+            </Grid.ColumnDefinitions>
+            <RichTextBox x:Name="TextBox" TextChanged="RenderPage"/>
+            <wpf:ChromiumWebBrowser Grid.Column="1" x:Name="Browser"/>
+        </Grid>
+        
     </Border>
 </Page>
