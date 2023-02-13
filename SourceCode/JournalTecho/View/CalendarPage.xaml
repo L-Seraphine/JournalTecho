@@ -4,6 +4,8 @@
       xmlns:local="clr-namespace:JournalTecho.View"
       Title="CalendarPage">
     <Border Background="AliceBlue" Margin="10" CornerRadius="10">
-        <Calendar/>
+        <Grid>
+            <Calendar VerticalAlignment="Center"/>
+        </Grid>
     </Border>
 </Page>

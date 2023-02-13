@@ -1,4 +1,7 @@
-﻿using System;
+﻿using JournalTecho.ViewModel;
+using Markdig;
+using Markdig.Syntax;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +27,7 @@ namespace JournalTecho.View
         private DiaryPage()
         {
             InitializeComponent();
+            this.DataContext = new DiaryPageViewModel(TextBox,Browser);    //连接对应的viewmodel
         }
         public static DiaryPage GetDiaryPage()
         {
@@ -32,6 +36,11 @@ namespace JournalTecho.View
                 instance = new DiaryPage();
             }
             return instance;
+        }
+
+        private void RenderPage(object sender, TextChangedEventArgs e)
+        {
+            DiaryPageViewModel.RenderPage();
         }
     }
 }

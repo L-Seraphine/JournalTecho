@@ -46,8 +46,8 @@ namespace JournalTecho.ViewModel
 
             //打开日记
             Diary = new Command((arg)=> {
-                DiaryPage diaryPage = DiaryPage.GetDiaryPage();     //获取日历页面
-                mainframe.Navigate(diaryPage);   //导航到日历页面
+                DiaryPage diaryPage = DiaryPage.GetDiaryPage();     //获取日记页面
+                mainframe.Navigate(diaryPage);   //导航到日记页面
             });
 
             //打开点子

@@ -1,0 +1,18 @@
+[0211/214531.644:ERROR:component_installer.cc(298)] Failed to verify installation for Widevine Content Decryption Module (C:\Users\leiming\AppData\Local\CEF\User Data\WidevineCdm\4.10.2449.0).: ϵͳ�Ҳ���ָ����·���� (0x3)
+[0211/214605.898:INFO:CONSOLE(323)] "这是一个最好的时代，
+科技的发展给予了每个人创造价值的可能性；
+这也是一个最充满想象的时代，
+每一位心怀梦想的人，终会奔向星辰大海。
+百度与你们一起仰望星辰大海，携手共筑未来！
+", source: https://pss.bdstatic.com/r/www/cache/static/protocol/https/global/js/all_async_search_408a566.js (323)
+[0211/214605.922:INFO:CONSOLE(323)] "%c百度2023校园招聘简历投递：https://talent.baidu.com/jobs/list color:red", source: https://pss.bdstatic.com/r/www/cache/static/protocol/https/global/js/all_async_search_408a566.js (323)
+[0211/222353.598:ERROR:interface_endpoint_client.cc(695)] Message 3 rejected by interface blink.mojom.Widget
+[0211/231322.843:ERROR:interface_endpoint_client.cc(695)] Message 3 rejected by interface blink.mojom.Widget
+[0211/232705.510:ERROR:interface_endpoint_client.cc(695)] Message 3 rejected by interface blink.mojom.Widget
+[0211/234210.760:ERROR:interface_endpoint_client.cc(695)] Message 3 rejected by interface blink.mojom.Widget
+[0212/001116.448:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/200028.171:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/201307.122:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/201954.393:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/205636.990:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/210025.858:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
