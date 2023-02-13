@@ -11,3 +11,8 @@
 [0211/232705.510:ERROR:interface_endpoint_client.cc(695)] Message 3 rejected by interface blink.mojom.Widget
 [0211/234210.760:ERROR:interface_endpoint_client.cc(695)] Message 3 rejected by interface blink.mojom.Widget
 [0212/001116.448:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/200028.171:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/201307.122:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/201954.393:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/205636.990:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 
+[0213/210025.858:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is disabled, ANGLE is 

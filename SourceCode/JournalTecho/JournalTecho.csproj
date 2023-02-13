@@ -104,6 +104,7 @@
     <Compile Include="ViewModel\Command.cs" />
     <Compile Include="ViewModel\DiaryPageViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\Config.cs" />
     <Compile Include="ViewModel\SettingsViewModel.cs" />
     <Compile Include="View\CalendarPage.xaml.cs">
       <DependentUpon>CalendarPage.xaml</DependentUpon>

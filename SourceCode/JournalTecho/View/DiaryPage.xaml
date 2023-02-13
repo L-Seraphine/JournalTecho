@@ -12,13 +12,65 @@
     <Border Margin="10">
         <Grid>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="180" Width="0.1*"/>
                 <ColumnDefinition/>
-                <!--左侧文本输入-->
-                <ColumnDefinition Width="1*"/>
-                <!--右侧文本渲染-->
             </Grid.ColumnDefinitions>
-            <RichTextBox x:Name="TextBox" TextChanged="RenderPage"/>
-            <wpf:ChromiumWebBrowser Grid.Column="1" x:Name="Browser"/>
+            <!--左侧文件夹栏-->
+            <Border BorderBrush="Blue" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="0.05*"/>
+                    </Grid.RowDefinitions>
+                    <ListBox BorderBrush="White"/>
+                    <Button BorderBrush="Gray" Content="选择文件夹" Background="White" 
+                            Style="{DynamicResource LeftButtonStyle2}" Grid.Row="1"
+                            Command="{Binding SelectFolder}"/>
+                </Grid>
+            </Border>
+            <!--分割线-->
+            <GridSplitter Background="Transparent"  Width="8"/>
+            
+            <!--右侧文章栏-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.05*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <!--顶部文章名称栏-->
+                <Border Background="Red" Margin="0 0 0 1">
+                    <WrapPanel>
+                        
+                    </WrapPanel>
+                </Border>
+                <!--底部文章栏-->
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <!--左侧文本输入-->
+                        <ColumnDefinition Width="1*"/>
+                        <!--右侧文本渲染-->
+                    </Grid.ColumnDefinitions>
+                    <!--左侧输入栏-->
+                    <RichTextBox x:Name="TextBox" TextChanged="RenderPage">
+                        <!--缩放文本-->
+                        <RichTextBox.Style>
+                            <Style TargetType="RichTextBox">
+                                <Style.Triggers>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="IsMouseOver"/>
+                                            <Condition Property=""/>
+                                        </MultiTrigger.Conditions>
+                                    </MultiTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </RichTextBox.Style>
+                    </RichTextBox>
+                    <!--右侧渲染栏-->
+                    <wpf:ChromiumWebBrowser Grid.Column="1" x:Name="Browser"/>
+                </Grid>
+            </Grid>
         </Grid>
         
     </Border>

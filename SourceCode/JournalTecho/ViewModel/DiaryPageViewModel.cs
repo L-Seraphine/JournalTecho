@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 using CefSharp.Wpf;
 using JournalTecho.View;
 using Markdig;
@@ -17,8 +18,8 @@ namespace JournalTecho.ViewModel
     {
         //文件渲染位置
         public static string FileLocation { get; set; }
-        //渲染命令
-        public ICommand RenderText { get; set; }
+        //选择文件夹命令
+        public ICommand SelectFolder { get; set; }
         //输入框控件
         private static RichTextBox textBox;
         //渲染框控件
@@ -28,6 +29,10 @@ namespace JournalTecho.ViewModel
         {
             textBox = TextBox;
             chromiumWebBrowser = ChromiumWebBrowser;
+            //打开文件夹命令
+            SelectFolder = new Command((arg) => {
+
+            });
         }
         //渲染页面
         public static void RenderPage()
