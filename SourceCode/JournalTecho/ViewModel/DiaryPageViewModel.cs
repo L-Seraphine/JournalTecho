@@ -16,7 +16,7 @@ namespace JournalTecho.ViewModel
     public class DiaryPageViewModel
     {
         //文件渲染位置
-        public static string fileLocation { get; set; }
+        public static string FileLocation { get; set; }
         //渲染命令
         public ICommand RenderText { get; set; }
         //输入框控件
@@ -33,9 +33,9 @@ namespace JournalTecho.ViewModel
         public static void RenderPage()
         {
             var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
-            fileLocation = "D:\\Work Space\\Project\\JournalTecho\\SourceCode\\JournalTecho\\Data\\Test.html";
-            File.WriteAllText(fileLocation, Markdown.ToHtml(StringFromRichTextBox(textBox), pipeline));
-            chromiumWebBrowser.Address = fileLocation;
+            FileLocation = "D:\\Work Space\\Project\\JournalTecho\\SourceCode\\JournalTecho\\Data\\Test.html";
+            File.WriteAllText(FileLocation, Markdown.ToHtml(StringFromRichTextBox(textBox), pipeline));
+            chromiumWebBrowser.Address = FileLocation;
         }
         //获取RichTextBox中的内容
         static string StringFromRichTextBox(RichTextBox rtb)
