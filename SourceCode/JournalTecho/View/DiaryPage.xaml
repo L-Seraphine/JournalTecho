@@ -53,19 +53,6 @@
                     </Grid.ColumnDefinitions>
                     <!--左侧输入栏-->
                     <RichTextBox x:Name="TextBox" TextChanged="RenderPage">
-                        <!--缩放文本-->
-                        <RichTextBox.Style>
-                            <Style TargetType="RichTextBox">
-                                <Style.Triggers>
-                                    <MultiTrigger>
-                                        <MultiTrigger.Conditions>
-                                            <Condition Property="IsMouseOver"/>
-                                            <Condition Property=""/>
-                                        </MultiTrigger.Conditions>
-                                    </MultiTrigger>
-                                </Style.Triggers>
-                            </Style>
-                        </RichTextBox.Style>
                     </RichTextBox>
                     <!--右侧渲染栏-->
                     <wpf:ChromiumWebBrowser Grid.Column="1" x:Name="Browser"/>

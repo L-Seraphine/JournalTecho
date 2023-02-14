@@ -88,5 +88,25 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/cefsharp.common.110.0.250/cefsharp/x86/cefsharp.core.runtime.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/cefsharp.common.110.0.250/cefsharp/x86/cefsharp.core.runtime.pdb")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/cefsharp.common.110.0.250/cefsharp/x86/cefsharp.core.runtime.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.macos.2.8.2.3/runtimes/osx/native/libharfbuzz" +
+    "sharp.dylib")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.macos.2.8.2.3/runtimes/osx/native/libharfbuzz" +
+    "sharp.dylib")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.win32.2.8.2.3/runtimes/win-x86/native/libharf" +
+    "buzzsharp.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.win32.2.8.2.3/runtimes/win-x64/native/libharf" +
+    "buzzsharp.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/harfbuzzsharp.nativeassets.win32.2.8.2.3/runtimes/win-arm64/native/libha" +
+    "rfbuzzsharp.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.macos.2.88.3/runtimes/osx/native/libskiasharp.dyl" +
+    "ib")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.macos.2.88.3/runtimes/osx/native/libskiasharp.dyl" +
+    "ib")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.3/runtimes/win-x86/native/libskiasharp" +
+    ".dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.3/runtimes/win-x64/native/libskiasharp" +
+    ".dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("packages/skiasharp.nativeassets.win32.2.88.3/runtimes/win-arm64/native/libskiasha" +
+    "rp.dll")]
 
 

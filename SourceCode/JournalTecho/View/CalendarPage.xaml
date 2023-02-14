@@ -2,10 +2,12 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="clr-namespace:JournalTecho.View"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
       Title="CalendarPage">
     <Border Background="AliceBlue" Margin="10" CornerRadius="10">
         <Grid>
-            <Calendar VerticalAlignment="Center"/>
+            <!--<Calendar VerticalAlignment="Center"/>-->
+            <hc:Growl/>
         </Grid>
     </Border>
 </Page>
